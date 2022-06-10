@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bp201\\Desktop\\FronToBack_JUAN\\WebApplication\\WebApplication.csproj": {}
+    "C:\\Users\\acer\\Desktop\\juanProject\\FronToBack_JUAN\\WebApplication\\WebApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bp201\\Desktop\\FronToBack_JUAN\\WebApplication\\WebApplication.csproj": {
+    "C:\\Users\\acer\\Desktop\\juanProject\\FronToBack_JUAN\\WebApplication\\WebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bp201\\Desktop\\FronToBack_JUAN\\WebApplication\\WebApplication.csproj",
+        "projectUniqueName": "C:\\Users\\acer\\Desktop\\juanProject\\FronToBack_JUAN\\WebApplication\\WebApplication.csproj",
         "projectName": "WebApplication",
-        "projectPath": "C:\\Users\\bp201\\Desktop\\FronToBack_JUAN\\WebApplication\\WebApplication.csproj",
-        "packagesPath": "C:\\Users\\bp201\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bp201\\Desktop\\FronToBack_JUAN\\WebApplication\\obj\\",
+        "projectPath": "C:\\Users\\acer\\Desktop\\juanProject\\FronToBack_JUAN\\WebApplication\\WebApplication.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acer\\Desktop\\juanProject\\FronToBack_JUAN\\WebApplication\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bp201\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,9 +40,27 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -67,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
