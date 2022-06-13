@@ -1,9 +1,12 @@
-﻿
+﻿@using WebApplication.Models
+
 @{
     ViewData["Title"] = "Index";
 }
-
+@model Blogs
 <main>
+    @Model.Title
+    @Model.Description
     <!-- hero slider section start -->
     <section class="hero-slider">
         <div class="container">
