@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.DAL;
 using WebApplication.Models;
+using WebApplication.ViewModel.HomeViewModel;
 
 namespace WebApplication.Controllers
 {
@@ -18,8 +19,13 @@ namespace WebApplication.Controllers
         }
         public IActionResult Index()
         {
-            Blogs result = _context.Blogs.FirstOrDefault();
-            return View(result);
+            HomeViewModel home = new HomeViewModel()
+            {
+                Sliders = _context.Sliders.ToList(),
+                Blogs = _context.Blogs.ToList(),
+                Features = _context.Features.ToList(),
+            };
+            return View(home);
         }
     }
 }
